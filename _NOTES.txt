@@ -1,0 +1,38 @@
+Task 1 - HTML/CSS
+	To create a pixel-perfect match for given design,
+	I used a lot of absolute positioning and pixel offsets.
+	While it works for the given resolutions 
+	(fullscreen 1920x1080 and 375x812), it is not
+	ideal for a real webpage that has to work on any device.
+	I don't feel confident enough with HTML/CSS to create
+	a pixel-perfect match and at the same time have it
+	respond to changes in screen resolution.
+
+Task 2 - JavaScript
+
+- Once validation has passed, the error disappears
+- The button is disabled if the form is not valid
+	I think showing errors immediately after
+	opening a webpage is not good for UX,
+	so active error-checking only starts after user attempts to
+	submit the form with invalid data.
+- On successful validation, a success message appears in the place of the form
+	After passing client-side validation, an AJAX request will
+	be sent to the server. On success, server will respond with
+	"true", otherwise server will send an error text that will be displayed.
+	When receiving "true" from the server, "thank you" message will appear.
+	An additional (server-side) error was added when the e-mail is already on mailing list,
+	if this is not neccessary (and "thank you" message should appear anyways), it is
+	a simple change to make in subscribtion.php.
+
+Task 3 - PHP/MYSQL
+	MYSQL connection details are saved in db.php file.
+	Table creation query is available in _SQL.txt file.
+- Data is validated also in PHP, and if JavaScript is disabled ...
+	Website works almost identically whether JS is disabled or not,
+	the only difference is the lack of real-time error checking and
+	that with JavaScript enabled the page is never reloaded, while
+	the PHP-only version is reloaded after submitting the form,
+	displaying error message (or "thank you" message if verification was successful).
+
+

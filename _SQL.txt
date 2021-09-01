@@ -1,0 +1,7 @@
+CREATE TABLE `webdevtest`.`email_list` (
+  `id` INTEGER AUTO_INCREMENT,
+  `email` VARCHAR(128) NOT NULL,
+  `email_provider` VARCHAR(128) NOT NULL,
+  `timestamp` DATETIME NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
